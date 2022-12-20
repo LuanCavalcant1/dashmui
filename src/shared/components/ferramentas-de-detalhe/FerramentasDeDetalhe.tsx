@@ -32,7 +32,7 @@ export const FerramentasDeDetalhe: React.FC<IFerramentasDeDetalheProps> = ({
     mostrarBotaoVoltar = true,
     mostrarBotaoApagar = true,
     mostrarBotaoSalvar = true,
-    mostrarBotaoSalvarEFechar = false,
+    mostrarBotaoSalvarEFechar = true,
 
     mostrarBotaoNovoCarregando = false,
     mostrarBotaoVoltarCarregando = false,
