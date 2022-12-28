@@ -1,4 +1,5 @@
 
+import { Box, Grid, LinearProgress, Paper, Typography } from '@mui/material';
 import { FormHandles } from '@unform/core';
 import { Form } from '@unform/web';
 import { useEffect, useRef, useState } from 'react';
@@ -39,7 +40,7 @@ export const DetalheDePessoas: React.FC = () => {
                         navigate('/pessoas');
                     } else {
                         setNome(result.nomeCompleto);
-  
+
                         formRef.current?.setData(result);
                     }
                 });
@@ -107,9 +108,51 @@ export const DetalheDePessoas: React.FC = () => {
         >
 
             <Form ref={formRef} onSubmit={handleSave}>
-                <VTextField placeholder='Nome completo' name='nomeCompleto' />
-                <VTextField placeholder='Email' name='email' />
-                <VTextField placeholder='Cidade Id' name='cidadeId' />
+                <Box margin={1} display='flex' flexDirection='column' component={Paper} variant='outlined'>
+
+                    <Grid container direction='column' padding={2} spacing={2}>
+
+                        <Grid item>
+                            <Typography variant='h6'>Geral</Typography>
+                        </Grid>
+
+                        {isLoading && (
+                            <Grid item>
+                                <LinearProgress variant='indeterminate'></LinearProgress>
+                            </Grid>
+                        )}
+
+                        <Grid container item direction='row' spacing={2}>
+
+                            <Grid item xs={12} sm={12} md={6} lg={4} xl={2}>
+                                <VTextField disabled={isLoading} fullWidth label='Nome completo' name='nomeCompleto' onChange={e => setNome(e.target.value)} />
+                            </Grid>
+
+                        </Grid>
+
+                        <Grid container item direction='row' spacing={2}>
+
+                            <Grid item xs={12} sm={12} md={6} lg={4} xl={2}>
+                                <VTextField disabled={isLoading} fullWidth label='Email' name='email' />
+                            </Grid>
+
+                        </Grid>
+
+                        <Grid container item direction='row' spacing={2}>
+
+                            <Grid item xs={12} sm={12} md={6} lg={4} xl={2}>
+                                <VTextField disabled={isLoading} fullWidth label='Cidade' name='cidadeId' />
+                            </Grid>
+
+                        </Grid>
+
+                    </Grid>
+
+
+
+
+
+                </Box>
             </Form>
         </LayoutBaseDePagina>
     );
