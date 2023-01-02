@@ -1,16 +1,10 @@
 {
   "pessoas": [
     {
-      "id": 1,
-      "email": "jandelsson@gmail.com",
-      "cidadeId": 1,
-      "nomeCompleto": "jandelsson lima"
-    },
-    {
       "id": 4,
+      "nomeCompleto": "fulano lima2",
       "email": "fulano@gmail.com",
-      "cidadeId": 1,
-      "nomeCompleto": "fulano lima"
+      "cidadeId": 1
     },
     {
       "id": 2,
