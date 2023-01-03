@@ -4,7 +4,7 @@
       "id": 4,
       "nomeCompleto": "fulano lima2",
       "email": "fulano@gmail.com",
-      "cidadeId": 1
+      "cidadeId": 2
     },
     {
       "id": 2,
@@ -83,6 +83,30 @@
     {
       "nome": "santa cruz",
       "id": 1
+    },
+    {
+      "nome": "caruaru",
+      "id": 2
+    },
+    {
+      "nome": "Toritama",
+      "id": 3
+    },
+    {
+      "nome": "jatauba",
+      "id": 4
+    },
+    {
+      "nome": "Brejo da madre de Deus",
+      "id": 5
+    },
+    {
+      "nome": "Taquaritinga do norte",
+      "id": 6
+    },
+    {
+      "nome": "Vertentes",
+      "id": 7
     }
   ]
 }
