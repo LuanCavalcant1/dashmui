@@ -77,6 +77,12 @@
       "email": "joseph@gmail.com",
       "cidadeId": "1",
       "id": 17
+    },
+    {
+      "nomeCompleto": "jurema",
+      "email": "jurema@gmail.com",
+      "cidadeId": 5,
+      "id": 18
     }
   ],
   "cidades": [
