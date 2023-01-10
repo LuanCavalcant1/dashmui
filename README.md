@@ -6,6 +6,6 @@
 * criação de cadastros 
 * FakeApi ultilizando jason-server
 * typescrtip ultilizado com reactjs
-* riação de rotas com React-Router-Dom
+* Criação de rotas com React-Router-Dom
 
 
