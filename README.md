@@ -5,6 +5,7 @@
 
 * criação de cadastros 
 * FakeApi ultilizando jason-server
+* Material UI
 * typescrtip ultilizado com reactjs
 * Criação de rotas com React-Router-Dom
 
